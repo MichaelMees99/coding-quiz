@@ -1,3 +1,31 @@
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    position: relative;
+    animation-name: color-shift;
+    animation-duration: 4s;
+    animation-timing-function:linear ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-shift {
+    0%   {color: red; transform: rotate(0deg);}
+    25%  {color: rgb(55, 161, 55); transform: rotate(-2deg); }
+    50%  {color: blue; transform: rotate(0deg);}
+    75%  {color: rgb(204, 0, 204); transform: rotate(2deg);}
+    100% {color: red; transform: rotate(0deg);}
+
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -49,4 +77,14 @@ button:hover {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#buttons-container button {
+    margin: 0;
 }

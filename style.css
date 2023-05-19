@@ -1,12 +1,12 @@
 #header {
     position: fixed;
-    top: 0;
+    top: 150px;
     width: 100%;
     background-color: #f5f5f5;
     color: #000;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 #title {
@@ -56,16 +56,19 @@ button {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100;
     
 }
 
 button:hover {
     background-color:  rgb(101, 37, 251) ;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.3s;
 }
 
-
+#high-scores-button, #start-button {
+    width: 200px;
+}
 
 #initials-input {
     margin-top: 20px;
@@ -87,4 +90,16 @@ ul {
 
 #buttons-container button {
     margin: 0;
+}
+
+#question {
+    font-weight: bolder;
+}
+
+#reset-high-scores-button {
+    background-color: rgb(217, 0, 0);
+}
+
+#reset-high-scores-button:hover {
+    background-color: rgb(255, 0, 0);
 }
